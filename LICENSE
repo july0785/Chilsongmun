@@ -1,0 +1,59 @@
+Chilsongmun — 두음법칙 정밀판정 SDK
+Copyright (c) 2026 july0785 (청류 프로젝트 / Cheongryu Project)
+
+ALL RIGHTS RESERVED. / 모든 권리 보유.
+
+[한국어]
+
+본 저장소의 소스 코드, 사전 데이터, 문서(이하 "본 저작물")의 모든 권리는
+저작권자에게 있습니다. 본 저작물은 오픈소스 라이선스로 제공되지 않습니다.
+
+다음의 행위만 허용됩니다.
+
+  1. GitHub 저장소에서 본 저작물을 열람하는 행위.
+  2. 청류(Cheongryu) 브라우저 확장프로그램이 실행 중 본 저장소의 릴리스
+     자산(사전 데이터팩)을 내려받아, 해당 확장프로그램의 기능 수행을 위해
+     최종 사용자의 기기 안에서 사용하는 행위.
+
+위에 명시된 경우를 제외하고, 저작권자의 사전 서면 허가 없이 본 저작물의
+전부 또는 일부를 복제, 수정, 배포, 재배포, 공중송신, 판매, 대여, 2차적
+저작물 작성, 그 밖의 방법으로 이용하는 것을 금지합니다.
+
+본 저작물은 "있는 그대로(AS IS)" 제공되며, 상품성, 특정 목적 적합성,
+비침해에 대한 보증을 포함하여 명시적이든 묵시적이든 어떠한 종류의 보증도
+하지 않습니다. 저작권자는 본 저작물의 사용으로 인하여 발생하는 어떠한
+손해에 대해서도 책임을 지지 않습니다.
+
+[English]
+
+All rights to the source code, dictionary data, and documentation in this
+repository (the "Work") are reserved by the copyright holder. The Work is
+NOT provided under an open-source license.
+
+Only the following are permitted:
+
+  1. Viewing the Work on GitHub.
+  2. The Cheongryu browser extension downloading the release assets
+     (dictionary data pack) of this repository at runtime and using them
+     on the end user's device solely to perform the extension's features.
+
+Except as expressly stated above, no part of the Work may be copied,
+modified, distributed, redistributed, publicly transmitted, sold, rented,
+used to create derivative works, or otherwise used in any way without the
+prior written permission of the copyright holder.
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
+ARISING FROM THE USE OF THE WORK.
+
+[데이터 출처 고지 / Data Source Notice]
+
+사전 데이터는 아래 공개 자료를 가공하여 구축되었습니다. 각 원자료의
+이용 조건은 해당 기관의 고지를 따릅니다.
+The dictionary data was built by processing the following public sources;
+the original materials remain subject to their respective terms.
+
+  - 우리말샘 (국립국어원, National Institute of Korean Language)
+  - Unihan Database kHangul (Unicode, Inc.)

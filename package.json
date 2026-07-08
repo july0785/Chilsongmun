@@ -1,0 +1,46 @@
+{
+  "name": "duum",
+  "version": "1.0.0",
+  "description": "남한어 → 북한 문화어 두음법칙 변환기 (조선말규범집 제25항)",
+  "type": "module",
+  "types": "./index.d.ts",
+  "main": "./src/node.js",
+  "module": "./src/browser.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "node": "./src/node.js",
+      "browser": "./src/browser.js",
+      "default": "./src/browser.js"
+    },
+    "./core": {
+      "types": "./index.d.ts",
+      "default": "./src/duum.js"
+    },
+    "./data/*": "./data/*"
+  },
+  "files": [
+    "src",
+    "data",
+    "index.d.ts",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "keywords": [
+    "korean",
+    "hangul",
+    "두음법칙",
+    "문화어",
+    "북한어",
+    "nlp"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/july0785/Chilsongmun.git"
+  },
+  "private": true
+}
