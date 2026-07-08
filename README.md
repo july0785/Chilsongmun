@@ -101,10 +101,15 @@ python -m http.server   # 이후 examples/browser-demo.html 접속
 
 청류 확장프로그램은 아래 릴리스 자산만 내려받습니다.
 
-- 자산 이름: `chilsongmun_data_v<판번호>.tgz` — `data/`의 사전 JSON 5종을 tar.gz로 묶은 것
+- 자산 이름: `chilsongmun_data_v<판번호>.tgz` — **라이트판** 사전 JSON 5종을 tar.gz로 묶은 것
+- 라이트판은 `node tools/build-datapack.mjs`가 `data/` 전체판에서 만들어냅니다.
+  문맥(WSD)이 결과를 바꿀 수 없는 표제어의 공기어(kw)·중복 후보를 제거한 것으로,
+  빌더가 전 키(15.4만×2) 전수 대조와 문맥 회귀 배터리로 **판정 동일성을 증명**한 뒤에만 통과시킵니다.
+  (v1.0.1 기준: 37MB→10.2MB, tgz 9.1MB→1.7MB, 적재 시간 약 1/3)
 - 확장프로그램은 내려받은 파일의 **SHA-256을 내장 값과 대조**한 뒤에만 사용하며, 검증 실패 시 폐기합니다
-- 데이터팩을 갱신할 때는 새 태그로 릴리스를 만들고, 확장 쪽 `chilsongmun/offscreen-bridge.js`의
-  `DATA_VERSION`·`DATA_SHA256` 상수를 함께 올립니다
+- 데이터팩 갱신 절차: `data/` 갱신 → `node tools/build-datapack.mjs` (전수 대조 통과 필수) →
+  `dist/lite-data/`를 tar.gz(`--format=ustar`)로 묶어 새 태그로 릴리스 →
+  확장 쪽 `chilsongmun/offscreen-bridge.js`의 `DATA_VERSION`·`DATA_SHA256` 상수를 함께 올립니다
 
 ## 라이선스
 
